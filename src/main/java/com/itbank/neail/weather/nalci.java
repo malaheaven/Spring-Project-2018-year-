@@ -35,16 +35,16 @@ public class nalci {
 			String[] gList = r1.split("</caption>");
 			String[] hList = r2.split("<tr>");
 			String real1 = "<table cellspacing='2' cellpadding='2'  border='0'>" + gList[1];
-			String real2 = "https://weather.naver.com/rgn/" + tmpList[1];
-			String real3 = "https://weather.naver.com/rgn/" + tmpList[2];
-			String real4 = "https://weather.naver.com/rgn/" + tmpList[3];
-			String real5 = "https://weather.naver.com/rgn/" + tmpList[4];
-			String real6 = "https://weather.naver.com/rgn/" + tmpList[5];
-			String real7 = "https://weather.naver.com/rgn/" + tmpList[6];
-			String real8 = "https://weather.naver.com/rgn/" + tmpList[7];
-			String real9 = "https://weather.naver.com/rgn/" + tmpList[8];
-			String real10 = "https://weather.naver.com/rgn/" + tmpList[10];
-			String real11 = "https://weather.naver.com/rgn/" + hList[0] + "</table>";
+			String real2 = "" + tmpList[1];
+			String real3 = "" + tmpList[2];
+			String real4 = "" + tmpList[3];
+			String real5 = "" + tmpList[4];
+			String real6 = "" + tmpList[5];
+			String real7 = "" + tmpList[6];
+			String real8 = "" + tmpList[7];
+			String real9 = "" + tmpList[8];
+			String real10 = "" + tmpList[10];
+			String real11 = "" + hList[0] + "</table>";
 			weather = real1 + real2 + real3 + real4 + real5 + real6 + real7 + real8 + real9 + real10 + real11;
 			nalciDTO.setNalci(weather);
 		}
