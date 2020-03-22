@@ -36,7 +36,6 @@
 - 여행 사이트인 만큼 그 지역의 위치를 정확하게 전달할 수 있도록 **Kakao Daum 지도 API를 연동**
 - 내일로와 관련된 정보와 날씨 정보는 유동적인 변화가 예측되기 때문에 실시간으로 변동하는 **네이버 날씨 이미지를 크롤링 함**
 - 사용자가 자신의 여행후기를 다른 사용자에게 전달할 수 있도록 **사진 업로드 기능 개발**
-######  (혹시 네이버 날씨 크롤링 문제가 되면 메일보내주세요 지울게요ㅠ 죄송합니다.)
 
 ---
 
@@ -49,7 +48,7 @@ Neal ──┬ pom.xml           ┌ resources ─ log4j.xml
                            │                       ├ mytrip   (사용자 여행 일정 등록 관련 Controller,DAO,DTO,Mapper)
                            │                       ├ neailro  (내일로 2018년 설명 이미지 출처 -http://www.rail-ro.com 크롤링 Controller)
                            │                       ├ review   (사용자 여행 후기게시판 관련 Controller,DAO,DTO,Mapper)
-                           │                       └ weather  (네이버 날씨 이미지 출처 -https://weather.naver.com/ 크롤링 및 DTO)
+                           │                       └ weather  (실시간으로 변동되는 날씨 이미지 크롤링 및 DTO (크롤링한 URL은 지움))
                            │        ┌ rootmain.jsp (제일 첫화면)
                            └ webapp ┼ loginmain.jsp (로그인한 후 페이지)
                                     ├ resources ┬ CSS (사실은 CSS 파일 존재 ㅠ 혹시 모를 저작권 때문에 지웠다.)
