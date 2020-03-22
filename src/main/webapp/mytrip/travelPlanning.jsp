@@ -55,7 +55,7 @@
 		});
 	</script>
 	<script type="text/javascript"
-		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b97ab5a6737ac2991d53c2a712879f05"></script>
+		src=" /* 카카오 API URL */ "></script>
 	<script>
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
 			mapOption = {
