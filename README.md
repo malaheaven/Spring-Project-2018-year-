@@ -42,11 +42,15 @@
        
 Neal ──┬ pom.xml           ┌ resources ─ log4j.xml
        └ src ──────────────┼ java/com/itbank/neail ┬ location (관리자페이지 지역명소등록 관련 Controller,DAO,DTO,Mapper) 
-                           │                       ┼ member   (회원 관련 Controller,DAO,DTO,Mapper) 
+                           │                       ├ member   (회원 관련 Controller,DAO,DTO,Mapper) 
                            │                       ├ mytrip   (사용자 여행 일정 등록 관련 Controller,DAO,DTO,Mapper)
                            │                       ├ neailro  (내일로 2018년 설명 이미지 출처 -http://www.rail-ro.com 크롤링 Controller)
                            │                       ├ review   (사용자 여행 후기게시판 관련 Controller,DAO,DTO,Mapper)
                            │                       └ weather  (네이버 날씨 이미지 출처 -https://weather.naver.com/ 크롤링 및 DTO)
-                           │        ┌ rootmain.jsp
-                           └ webapp ┼ loginmain.jsp (                      
+                           │        ┌ rootmain.jsp (제일 첫화면)
+                           └ webapp ┼ loginmain.jsp (로그인한 후 페이지)
+                                    ├ resources ┬ CSS (사실은 CSS 파일 존재 ㅠ 혹시 모를 저작권 때문에 지웠다.)
+                                    │           ├ images (사실은 이미지도 존재 ㅠ 저작권 때문에 지움.)
+                                    │           └ js (jQuery 사용하려고 jquery-3.3.1.min.js넣어줌.그냥 부트스트랩쓰면서 링크해줄걸....)
+                                    └ 기능 별로 정리한 JSP 파일들(회원가입 페이지 등등 많다.)             
 ```
