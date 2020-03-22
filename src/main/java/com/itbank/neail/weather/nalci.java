@@ -23,7 +23,7 @@ public class nalci {
 	@ResponseBody
 	public NalciDTO json() throws Exception {
 		NalciDTO nalciDTO = new NalciDTO();
-		String URL = "https://weather.naver.com/period/weeklyFcast.nhn";
+		String URL = "";
 		Document doc = Jsoup.connect(URL).get();
 		Elements img = doc.select("table.tbl_type5.tbl_wk");
 		String weather = null;
